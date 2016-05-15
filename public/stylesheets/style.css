@@ -1,0 +1,199 @@
+body{
+  background-color: #DAD2C7;
+  background: linear-gradient(to bottom, #DAD2C7, #C2660E);
+}
+.navbar{
+  background-color: transparent;
+  border-color: transparent;
+}
+.navbar-default>.navbar-nav>li>a{
+  color: #333333;
+}
+.navbar-default>.navbar-nav>li>a:hover{
+  color: white;
+}
+h3{
+  color: #333333;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 75px;
+  margin-bottom: 0px;
+}
+
+h5{
+  color: #333333;
+  text-align: center;
+  margin-top: 0px;
+}
+.todo-list{
+  background-color: white;
+  border-radius: 0 0 10px 10px;
+  margin-top: 40px;
+}
+.project{
+  background-color: #365C96;
+  background: linear-gradient(to bottom, #4D7EBB, #365C96);
+  padding: 10px 0 10px 0;
+  border: 1px solid #546F7B;
+}
+.project-title{
+  color: white;
+  font-size: 16px;
+}
+.glyphicon-list-alt{
+  margin: 0 5px 0 13px;
+}
+.project-options{
+  visibility: hidden;
+  float: right;
+  color: #8EB1E5;
+  margin-right: 20px;
+}
+.project:hover{
+  cursor: pointer;
+}
+.project:hover .project-options{
+  visibility: visible;
+}
+.project-options>span{
+  padding: 0 10px;
+}
+.project-options>span:first-child{
+  border-right: 1px solid #8EB1E5;
+}
+.glyphicon-plus{
+  float: left;
+  font-size: 25px;
+  top: 15px;
+  left: 15px;
+  color: #56906C;
+  text-shadow: 0 1px 0px black;
+}
+.add-task{
+  background-color: #DFDFDF;
+  background: linear-gradient(to bottom, #DFDFDF, #CCCCCC);
+  border: 1px solid #C6C5B2;
+}
+.add-task>form{
+  margin-bottom: 0;
+}
+.add-task>form>div{
+  padding: 10px 10px 10px 25px;
+}
+.add-task>form>div input{
+  border-radius: 0;
+}
+.add-task>form>div button{
+  padding-left: 30px;
+  padding-right: 30px;
+  color: white;
+  background-color: #90C6A8;
+  background: linear-gradient(to bottom, #90C6A8, #518768);
+}
+.table>tbody>tr>td{
+  padding: 0;
+}
+.table>tbody>tr>td:last-child{
+  border-radius: 0 0 10px 10px
+;
+}
+.table>tbody>tr:hover{
+  background-color: #FCFED6;
+  cursor: pointer;
+}
+.nested-table{
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 3px 0px;
+  border-radius: 0 0 10px 10px;
+}
+.table .nested-table .status{
+  width: 3%;
+  padding: 13px;
+  border-right: 1px solid #EEE6E9;
+}
+.table .nested-table .task-body{
+  border-left: 1px solid #EEEAEB;
+  border-right: 1px solid #EEEAEB;
+  padding-left: 15px;
+  color: #9B9B9B;
+  font-size: 14px;
+}
+.table .nested-table .options{
+  visibility: hidden;
+  width: 15%;
+  color: #9B9B9B;
+  font-size: 14px;
+  padding-left: 10px;
+}
+.table>tbody>tr:hover .nested-table .options{
+  visibility: visible;
+
+}
+.table .nested-table .options span{
+  padding: 0 8px;
+}
+.table .nested-table .options span:first-child{
+  padding: 0;
+}
+.table .nested-table .options span:nth-child(2){
+  border-left: 1px solid #9B9B9B;
+  border-right: 1px solid #9B9B9B;
+}
+.table .nested-table .options span .glyphicon-triangle-top{
+  font-size: 10px;
+  padding: 0;
+  margin: 0 8px -5px 8px;
+  border-bottom: 1px solid #9B9B9B;
+}
+.table .nested-table .options span .glyphicon-triangle-bottom{
+  font-size: 10px;
+  padding: 0;
+  margin: 0 8px 0 8px;
+}
+.add-list>.glyphicon-plus{
+  top: 0;
+  left: 15px;
+  color: #2E4B6D;
+}
+.add-list{
+  width: 100%;
+  background-color: #4D7EBB;
+  background: linear-gradient(to bottom, #4D7EBB, #365C96);
+  color: white;
+  margin-top: 25px;
+  border: 1px solid #5C6D7D;
+}
+.add-edit{
+  margin-top: 20px;
+}
+.add-edit>div input{
+  border-radius: 0;
+}
+.add-edit>div button{
+  padding-left: 30px;
+  padding-right: 30px;
+  color: white;
+  background-color: #90C6A8;
+  background: linear-gradient(to bottom, #90C6A8, #518768);
+}
+.cancel{
+  width: 115px;
+  color: white;
+  background-color: #90C6A8;
+  background: linear-gradient(to bottom, #90C6A8, #518768);
+  float: right;
+}
+.cancel-auth{
+  float: left;
+}
+.btn:hover{
+  color: white;
+}
+
+.auth{
+  width: 115px;
+  color: white;
+  background-color: #90C6A8;
+  background: linear-gradient(to bottom, #90C6A8, #518768);
+}
