@@ -11,7 +11,7 @@ var app = express();
 
 var mongoose = require('mongoose');
 var passport = require('passport');
-mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/todos');
+mongoose.connect('mongodb://<dbuser>:<dbpassword>@ds019664.mlab.com:19664/heroku_w0gl9n45' || 'mongodb://localhost/todos');
 require('./models/Projects');
 require('./models/Tasks');
 require('./models/Users');
