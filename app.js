@@ -11,7 +11,7 @@ var app = express();
 
 var mongoose = require('mongoose');
 var passport = require('passport');
-mongoose.connect('mongodb://localhost/todos');
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/todos');
 require('./models/Projects');
 require('./models/Tasks');
 require('./models/Users');
