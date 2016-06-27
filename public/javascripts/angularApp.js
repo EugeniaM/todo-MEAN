@@ -127,9 +127,10 @@ app.controller('AddProjectCtrl', ['$scope', '$state', 'projects', function($scop
         //call createProject function of projects service
         projects.createProject({
             title: $scope.projectTitle
-        });
-        $scope.projectTitle = '';
-        $state.go('home'); //redirect to home state
+        }).then(function() {
+            $scope.projectTitle = '';
+            $state.go('home'); //redirect to home state
+        });        
     };
     $scope.cancel = function(){
         $state.go('home'); //redirect to home state when Cancel button is clicked
@@ -173,9 +174,10 @@ app.controller('EditTaskCtrl', ['$scope', '$state', 'projects', '$stateParams', 
         //call editTask function of projects service
         projects.editTask($stateParams.idProject, $stateParams.idTask, {
             body: $scope.taskBody
-        });
-        $scope.taskBody = '';
-        $state.go('home'); //redirect to home state
+        }).then(function() {
+            $scope.taskBody = '';
+            $state.go('home'); //redirect to home state
+        });        
     };
     $scope.cancel = function(){
         $state.go('home'); //redirect to home state when Cancel button is clicked
@@ -284,7 +286,7 @@ app.factory('projects', ['$state', '$http', 'auth', function($state, $http, auth
                     });
                 }
             });
-            if(!taskDown || ! taskUp) {
+            if(!taskDown || !taskUp) {
                 return;
             } else {
                 taskDown.priority = currentPriority; //set lower priority to taskDown object
@@ -311,7 +313,7 @@ app.factory('projects', ['$state', '$http', 'auth', function($state, $http, auth
                     });
                 }
             });
-            if(!taskDown || ! taskUp) {
+            if(!taskDown || !taskUp) {
                 return;
             } else {
                 taskUp.priority = currentPriority; //set higher priority to taskUp object
