@@ -148,9 +148,10 @@ app.controller('EditProjectCtrl', ['$scope', '$state', 'projects', '$stateParams
         //call editProject function of projects service
         projects.editProject($stateParams.id, {
             title: $scope.projectTitle
-        });
-        $scope.projectTitle = '';
-        $state.go('home'); //redirect to home state
+        }).then(function(){
+            $scope.projectTitle = '';
+            $state.go('home'); //redirect to home state
+        });        
     };
     $scope.cancel = function(){
         $state.go('home'); //redirect to home state when Cancel button is clicked
